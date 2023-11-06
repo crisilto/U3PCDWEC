@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100vh;
+    display: flex;
+    align-items: center;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0; 
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.marco {
+    border-left: 10px solid #3E5D8E;
+    border-right: 10px solid #3E5D8E;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.marco:first-child, .marco:nth-child(2) { 
+    border-top: 10px solid #3E5D8E;
+    border-bottom: 10px solid #3E5D8E;
+}
+
+.marco:nth-child(3), .marco:nth-child(4) { 
+    border-bottom: 10px solid #3E5D8E;
+    border-bottom: 10px solid #3E5D8E;
+}
+
+.imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
